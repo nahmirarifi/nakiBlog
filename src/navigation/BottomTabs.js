@@ -18,12 +18,12 @@ const BottomTabs = () => {
         <Tabs.Navigator
             initialRouteName='Home'
             screenOptions={{
-                headerShown: false,
+                headerShown: true,
                 tabBarShowLabel: false,
                 tabBarStyle: { borderTopColor: colors.bg, backgroundColor: colors.bg }
             }}
         >
-            <Tabs.Screen name='Home' component={HomeScreen}
+            <Tabs.Screen name='News' component={HomeScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Feather
@@ -35,7 +35,7 @@ const BottomTabs = () => {
                 }}
             />
 
-            <Tabs.Screen name='Profile' component={ProfileScreen}
+            <Tabs.Screen name='Menu' component={ProfileScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <AntDesign

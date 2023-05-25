@@ -13,7 +13,7 @@ const RSText = ({
     underLine,
     numberOfLines,
     right, center, left,
-    iconLeft, iconRight, red,
+    iconLeft, iconRight, red, white,
     ...rest }) => {
 
     const colors = Colors()
@@ -36,6 +36,7 @@ const RSText = ({
                 center && { textAlign: 'center' },
                 primary && { color: colors.text },
                 red && { color: colors.red },
+                white && { color: '#ffffff' },
                 secondary && { color: colors.text1 },
                 underLine && { textDecorationLine: 'underline' },
                 style
